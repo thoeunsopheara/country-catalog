@@ -14,7 +14,7 @@ import { debounceTime, distinctUntilChanged, switchMap } from 'rxjs';
 })
 export class AppComponent implements OnInit {
   title = 'country_catalog';
-  countries!: CountryResponse[];
+  countries: CountryResponse[] = [];
   pagination = {
     start: 0,
     end: 25
